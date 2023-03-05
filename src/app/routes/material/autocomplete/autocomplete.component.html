@@ -1,0 +1,17 @@
+  <div class="col-md-6">
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Appointment List</mat-card-title>
+      </mat-card-header>
+      <mat-card-content>
+        <mat-list>
+          <mat-list-item *ngFor="let message of messages">
+            <h3 matListItemTitle>{{message.code}}</h3>
+            <p matListItemLine>
+              <span>{{message.name}} </span>
+            </p>
+          </mat-list-item>
+        </mat-list>
+      </mat-card-content>
+    </mat-card>
+  </div>
